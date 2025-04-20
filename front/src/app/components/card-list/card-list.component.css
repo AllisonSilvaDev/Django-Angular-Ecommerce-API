@@ -1,17 +1,43 @@
 .container-car{
   display: flex;
   flex-direction: column;
+  padding: 0px 120px;
   .title{
 
   }
   .cards{
     display: flex;
-    justify-content: space-evenly;
-    border: 1px solid;
     .card{
-      width: 200px;
-      border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 250px;
       height: 300px;
+      cursor: pointer;
+      border: 1px solid rgb(255, 255, 255);
+      gap: 20px;
+    }
+    .card:hover{
+      border: 1px solid rgb(0, 162, 255);
+    }
+    .image{
+      width: 150px;
+      height: 150px;
+      img{
+        width: 100%;
+      }
+    }
+    .title-product{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 100%;
+      padding: 0px 5px;
+    }
+    .frete{
+      width: 100%;
+      padding: 0px 5px;
     }
   }
 }
