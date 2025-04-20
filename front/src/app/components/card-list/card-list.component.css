@@ -1,0 +1,17 @@
+.container-car{
+  display: flex;
+  flex-direction: column;
+  .title{
+
+  }
+  .cards{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid;
+    .card{
+      width: 200px;
+      border: 1px solid red;
+      height: 300px;
+    }
+  }
+}
