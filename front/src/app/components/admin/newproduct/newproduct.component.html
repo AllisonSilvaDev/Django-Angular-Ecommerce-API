@@ -1,9 +1,9 @@
-<div class="container-newproduct">
+<div class="container-newproduct" *ngIf="this.getVisibility()">
   <div class="container-bar">
     <div class="title">
       <p>New Product</p>
     </div>
-    <button class="btn btn-success" >New</button>
+    <button class="btn btn-success" (click)="mostrarProduto()">Close</button>
   </div>
   <form action="">
     <div class="name">

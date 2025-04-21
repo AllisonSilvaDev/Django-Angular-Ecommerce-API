@@ -3,6 +3,26 @@
     <div class="title">
       <p>List Products</p>
     </div>
-    <button class="btn btn-success" >New</button>
+    <button class="btn btn-success" (click)="mostrarProduto()" >New</button>
   </div>
-</div> 
+  <div class="listProducts">
+
+    <div class="cards">
+
+      <div class="card" *ngFor="let item of dados">
+        <div class="image">
+          <img [src]=" item.imagem" alt="">
+        </div>
+        <div class="title-product">
+          <p> {{ item.nome }}</p>
+          <p>R$ {{ item.preco }}</p>
+        </div>
+        <div class="frete">
+          <p>Frete: Gratis</p>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+</div>

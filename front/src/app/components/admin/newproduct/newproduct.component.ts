@@ -1,3 +1,4 @@
+import { VisibleService } from './../../service/visible.service';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
@@ -17,7 +18,18 @@ export class NewproductComponent {
   }
 
 
-  constructor(private http: HttpClient){}
+
+  constructor(private http: HttpClient, private visibleService: VisibleService){}
+
+
+  getVisibility() {
+    return this.visibleService.getVisibility(); // Acessando o valor do serviço
+  }
+
+  mostrarProduto() {
+    this.visibleService.setVisibility(false);
+  }
+
 
   postNewProduct(){
     this.http.post("http://127.0.0.1:8000/api/produtos/", this.data).subscribe(
