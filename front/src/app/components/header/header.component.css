@@ -6,11 +6,15 @@
   .ad-bar{
     display: flex;
     justify-content: space-between;
-    height: 40px;
+    height: 70px;
     align-items: center;
-    border: 1px solid;
     .welcome{
       display: flex;
+      justify-content: center;
+      p{
+        color: #636262;
+        font-size: 20px;
+      }
     }
     .moreInfos{
       display: flex;
@@ -33,6 +37,19 @@
     .logo{
       p{
         font-size: 40px;
+        color: rgb(0, 140, 255);
+      }
+    }
+    .search{
+      padding: 0px 5px;
+      background-color: #eee;
+      color: rgb(0, 140, 255);
+      input{
+        width: 400px;
+        height: 50px;
+        padding: 0px 5px;
+        border: none;
+        background-color: #eee;
       }
     }
     .login{
@@ -40,6 +57,12 @@
       gap: 20px;
       .cart{
         display: flex;
+        gap: 10px;
+      }
+      .line{
+        width: 1px;
+        height: 30px;
+        background-color: #ccc;
       }
     }
   }
@@ -48,28 +71,24 @@
     gap: 10px;
     #box1{
       width: 120px;
-      height: 35px;
+      height: 55px;
       border-radius: 16px;
       background-color: rgb(0, 140, 255);
-      display: flex;
-      align-items: center;
-      justify-content: center;
       gap: 8px;
       p{
         font-size: 14px;
         color: white;
-      }
+      } 
     }
     .box-category{
       width: 120px;
-      height: 35px;
-      border-radius: 16px;
+      height: 55px;
       background-color: rgb(255, 255, 255);
       display: flex;
-      align-items: center;
       justify-content: center;
-      gap: 8px;
+      align-items: center;
       p{
+        height: 0px;
         font-size: 14px;
         color: rgb(0, 0, 0);
       }
