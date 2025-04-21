@@ -4,7 +4,7 @@
   </div>
   <div class="cards" *ngIf="dados?.length">
 
-    <div class="card" *ngFor="let item of dados">
+    <div class="card" *ngFor="let item of dados | slice:inicio:limite">
       <div class="image">
         <img [src]=" item.imagem" alt="">
       </div>
