@@ -1,8 +1,8 @@
 <div class="container-car">
   <div class="title">
-    <p>Grab the best deal on Smartphones</p>
+    <p>Grab the best deal on <span>Smartphones</span></p>
   </div>
-  <div class="cards">
+  <div class="cards" *ngIf="dados?.length">
 
     <div class="card" *ngFor="let item of dados">
       <div class="image">

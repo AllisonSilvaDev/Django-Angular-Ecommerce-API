@@ -8,3 +8,7 @@ from .serializer import *
 class ProdutoView(ListCreateAPIView):
     queryset = Produto.objects.all()
     serializer_class = ProdutoSerializer
+
+class ProdutoDetailView(RetrieveUpdateDestroyAPIView):
+    queryset = Produto.objects.all()
+    serializer_class = ProdutoSerializer

@@ -1,0 +1,25 @@
+<div class="container-newproduct">
+  <div class="container-bar">
+    <div class="title">
+      <p>New Product</p>
+    </div>
+    <button class="btn btn-success" >New</button>
+  </div>
+  <form action="">
+    <div class="name">
+      <label for="">Nome</label>
+      <input type="text" name="nome" [(ngModel)]="data.nome"  placeholder="nome do produto">
+    </div>
+    <div class="preco">
+      <label for="">preco</label>
+      <input type="number" name="preco" [(ngModel)]="data.preco"  placeholder="preco do produto">
+    </div>
+    <div class="image">
+      <label for="">image</label>
+      <input type="text" name="imagem" [(ngModel)]="data.imagem" placeholder="image do produto">
+    </div>
+    <button type="submit" (click)="postNewProduct()">Cadastrar</button>
+  </form>
+
+</div>
+

@@ -1,9 +1,15 @@
 .container-car{
   display: flex;
   flex-direction: column;
-  padding: 0px 120px;
+  padding: 10px 120px;
   .title{
-
+    font-size: 25px;
+    border-bottom: 3px solid rgb(0, 162, 255);
+    width: 450px;
+    margin-bottom: 50px;
+    span{
+      color: rgb(0, 162, 255);
+    }
   }
   .cards{
     display: flex;
