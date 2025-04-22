@@ -19,10 +19,9 @@
       justify-content: center;
       align-items: center;
       width: 250px;
-      height: 300px;
+      height: 250px;
       cursor: pointer;
       border: 1px solid rgb(255, 255, 255);
-      gap: 20px;
     }
     .card:hover{
       border: 1px solid rgb(0, 162, 255);
@@ -40,6 +39,13 @@
       gap: 5px;
       width: 100%;
       padding: 0px 5px;
+      P{
+        font-weight: 600;
+      }
+      .titlePrinc{
+        font-size: 18px;
+        font-weight: 600;
+      }
     }
     .frete{
       width: 100%;

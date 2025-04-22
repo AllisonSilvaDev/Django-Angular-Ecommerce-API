@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { VisibleService } from './../../service/visible.service';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
@@ -19,7 +20,7 @@ export class NewproductComponent {
 
 
 
-  constructor(private http: HttpClient, private visibleService: VisibleService){}
+  constructor(private http: HttpClient, private visibleService: VisibleService, private router: Router){}
 
 
   getVisibility() {
@@ -35,6 +36,7 @@ export class NewproductComponent {
     this.http.post("http://127.0.0.1:8000/api/produtos/", this.data).subscribe(
       (res) => {
         console.log("Produto Castrado Com Sucesso", res)
+
       },
       (erro) => {
         console.log("Usuario Nao Cadastrado", erro)
